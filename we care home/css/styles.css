@@ -1,0 +1,1185 @@
+/* global styles <<<< */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+
+h2 {
+    color: #707070;
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.line-after {
+    color: #B0B0B0;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+}
+
+.line-after::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 280px;
+    height: 5px;
+    border-radius: 10px;
+    background: transparent linear-gradient(90deg, #FFFFFF 0%, #7CC576 100%);
+}
+
+.col-lg-8 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* header styles start */
+
+header {
+    position: relative;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.layer {
+    position: absolute;
+    height: 100%;
+    width: 57%;
+    right: 0;
+    z-index: -1;
+    background-image: url("../images/header-img1.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.layer .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #7CC576;
+    opacity: 0.7;
+    z-index: 2;
+    border-bottom-left-radius: 54em;
+}
+
+
+/* navbar styles start <<<< */
+
+.navbar{
+    width: 100%;
+    padding: 0 150px;
+    transition:500ms ease;
+    background:transparent;
+}
+
+.navbar.scrolled{
+    background-color: rgba(123, 197, 118, 0.9);
+}
+.navbar.scrolled .navbar-brand span{
+    color: #fff;
+}
+
+.collapse {
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.navbar-brand {
+    font-size: 35px;
+    font-weight: 400;
+    color: #707070;
+}
+.navbar-brand:hover{
+    color: #707070;
+}
+
+.navbar-brand span {
+    color: #7CC576;
+}
+
+.collapse li {
+    width: 90px;
+    margin-left: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.collapse a {
+    text-decoration: none;
+    color: #fff;
+    transition:all 0.4s ease-in-out;
+}
+
+
+.collapse li:hover a{
+    background-color: #707070;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+
+/* hero section styles start <<<< */
+
+.hero-Section {
+    padding-top: 200px;
+    color: #B0B0B0;
+}
+
+.hero-Section p:first-child {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.hero-Section p span:first-child {
+    color: #7CC576;
+}
+
+.hero-Section p span:last-child {
+    color: #707070;
+}
+
+h1 {
+    color: #7CC576;
+    font-weight: 300;
+    font-size: 54px;
+    margin-bottom: 30px;
+}
+
+h1 span {
+    font-weight: 900;
+}
+
+.hero-Section p:last-of-type {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+.hero-Section a {
+    background-color: #7CC576;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    transition:all 0.4s ease-in-out;
+}
+
+.hero-Section a:hover svg{
+    margin-left: 10px;
+}
+
+.hero-Section a svg {
+    margin-left: 4px;
+    transition: 0.3s ease-out;
+}
+
+
+/* best deals section start <<<< */
+
+.best-deals {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+
+/* best deals >> deal cards styles <<<< */
+.best-deals .cards {
+    margin-top: 180px;
+}
+
+.best-deals .card {
+    border: none;
+    background-color: #7CC576;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0 auto;
+    color: #fff;
+    padding-bottom: 50px;
+    box-shadow: -2px 25px 40px #7CC5764F;
+}
+
+.best-deals .img-container {
+    position: relative;
+    height: 350px;
+}
+
+.best-deals img {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: -70px;
+    margin: auto;
+    width: 90%;
+}
+
+.best-deals .img-resize {
+    width: 85%;
+}
+
+.best-deals .card p:first-of-type {
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.best-deals .cards a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    opacity: 0.58;
+    margin-bottom: 0;
+    transition:all 0.4s ease-in-out;
+}
+
+.best-deals .card a:hover{
+
+    opacity: 1;
+}
+
+/* newborn care section start <<<< */
+
+.newborn-care {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.newborn-care .row {
+    margin-bottom: 80px;
+}
+
+
+.newborn-care .card {
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    padding: 30px;
+}
+
+.newborn-care h3 {
+    color: #7CC576;
+    font-weight: 700;
+}
+
+.newborn-care .card p {
+    color: #B0B0B0;
+    position: relative;
+}
+
+/* baby holder section styles <<<< */
+
+.baby-holder {
+    margin: 230px 0;
+}
+
+.col-left {
+    padding: 0;
+    background-color: #7CC576;
+    position: relative;
+    height: 380px;
+    border-radius: 0px 30px 146px 0px;
+}
+
+.col-left .holder-img1 {
+    position: absolute;
+    width: 60%;
+    left: -120px;
+    bottom: 20px;
+}
+
+.col-left .holder-img2 {
+    position: absolute;
+    width: 55%;
+    bottom: 0;
+    right: 100px;
+}
+
+.col-right {
+    padding: 50px 150px 0 50px;
+    text-align: left;
+}
+
+.col-right h3 {
+    color: #707070;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.col-right p {
+    color: #B0B0B0;
+}
+
+.col-right p.price {
+    color: #7CC576;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.col-right span {
+    font-weight: 700;
+}
+
+.col-right a {
+    color: #fff;
+    background-color: #7CC576;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.col-right svg {
+    margin-left: 4px;
+    transition:all 0.6s ease-in-out;
+}
+
+.col-right a:hover svg{
+    margin-left: 10px;
+}
+
+/* babycare section styles <<<< */
+
+.babycare {
+    margin: 100px 0 60px;
+    text-align: center;
+}
+
+
+.babycare .card {
+    text-align: left;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 2px #C8C8C829;
+    padding-bottom: 10px;
+}
+
+.babycare .card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5A5454;
+}
+
+.babycare .card .article-date {
+    color: #7CC576;
+    font-size: 14px;
+}
+
+.babycare .card p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #747474;
+}
+
+.babycare .card svg {
+    color: #7CC576;
+    font-size: 25px;
+    transition:all 0.4s ease-in-out;
+}
+
+.babycare .card a:hover svg{
+    margin-left: 10px;
+    
+}
+
+.babycare a.posts {
+    text-decoration: none;
+    padding: 10px 65px;
+    border-radius: 10px;
+    color: #B0B0B0;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    background-color: rgba(124, 197, 118, 0.1);
+    margin: 70px auto 40px;
+    transition:all 0.4s ease-in-out;
+}
+
+.babycare a.posts:hover{
+    background-color: #7BC576;
+    color: #fff;
+}
+
+/* booking section styles <<<< */
+
+.booking {
+    background-color: #7CC576;
+    padding: 100px 0;
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    z-index: 0;
+}
+
+.booking p {
+    position: relative;
+    padding: 0 20px;
+}
+
+.booking p::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 280px;
+    height: 5px;
+    border-radius: 10px;
+    background: transparent linear-gradient(90deg, #FFFFFF 0%, #7CC576 100%);
+}
+
+.booking a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    transition:all 0.4s ease-in-out;
+}
+
+.booking a:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #7BC576;
+    border-radius: 15px;
+}
+
+.booking img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+/* customer reviews styles <<<< */
+
+.reviews {
+    margin: 100px 0 70px;
+}
+
+.slider {
+    margin: 100px 0 0;
+}
+
+.slider-row {
+    margin: 0;
+
+}
+
+.slider-item {
+    width: 450px !important;
+}
+
+.slider-item .card {
+    border: none;
+    padding: 60px 35px;
+    border-radius: 40px;
+    box-shadow: -10px -10px 20px #C8C8C829;
+}
+
+.slider-item h5 {
+    color: #5A5454;
+    font-size: 25px;
+    margin: 0 0 5px;
+    font-weight: 700;
+}
+
+.slider-item .review-date {
+    color: #7CC576;
+    font-size: 14px;
+}
+
+.slider-item .review-body {
+    color: #747474;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.slider-item .stars {
+    color: #FD6921;
+}
+
+.gallery {
+    height: 450px;
+}
+
+.flickity-viewport {
+    height: 100% !important;
+}
+
+.flickity-slider {
+    padding: 20px 0;
+}
+
+.gallery-cell {
+    width: 30%;
+    height: 300px;
+    margin-right: 10px;
+}
+
+.flickity-page-dots {
+    display: none;
+}
+
+/* signup block styles start */
+
+.gblock {
+    background-color: #7CC576;
+    padding: 80px 60px;
+    border-radius: 20px;
+    color: #fff;
+    margin-bottom: 80px;
+}
+
+.gblock p {
+    font-size: 55px;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.gblock span {
+    font-weight: 700;
+}
+
+.gblock a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #707070;
+    font-size: 20px;
+    padding: 15px 65px;
+    border-radius: 10px;
+    margin-top: 40px;
+    transition: 0.3s ease-out;
+}
+
+.gblock svg {
+    margin-left: 3px;
+    transition: 0.3s ease-out;
+}
+
+.gblock a:hover{
+    background-color: #fff;
+    color: #7BC576;
+}
+
+.gblock a:hover svg{
+    margin-left: 10px;
+}
+
+
+/* footer styles start <<<< */
+
+footer .menu-row {
+    padding: 0 15px 0 35px;
+    margin-bottom: 70px;
+}
+
+footer .footer-col {
+    padding: 0;
+}
+
+footer h5 {
+    color: #747474;
+    font-size: 24px;
+    margin-bottom: 22px;
+}
+
+footer li {
+    margin-bottom: 15px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #4B647E;
+    transition:all 0.4s ease-in-out;
+}
+
+footer li:hover a{
+    color: #7BC576;
+    text-decoration: none;
+}
+
+footer .stars2 {
+    color: #FD6921;
+    margin-bottom: 30px;
+}
+
+footer p {
+    color: #747474;
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.social-buttons a {
+    display: inline-block;
+    background-color: #7BC576;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    padding-top: 13px;
+    margin-right: 10px;
+    transition: 0.3s ease-out;
+}
+
+.social-buttons a:hover{
+    background-color: #747474;
+}
+
+.finale {
+    text-align: center;
+}
+
+.finale h2 {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.finale span {
+    color: #7CC576;
+}
+
+.finale h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 70px;
+    height: 4px;
+    background-color: #7CC576;
+}
+
+
+
+
+
+
+
+
+/* media queries start here */
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+    .navbar{
+        padding: 0 30px;
+    }
+
+    header .layer .overlay{
+        border-bottom-left-radius: 40em;
+    }
+
+    .hero-Section h1{
+        font-size: 52px;
+    }
+
+    .best-deals .img-container {
+        height: 300px;
+    }
+
+    footer .social-buttons a{
+        width: 40px;
+        height: 40px;
+        padding-top: 8px;
+    }
+    .baby-holder{
+        margin: 200px 0;
+    }
+
+    .baby-holder .col-left{
+        height: 250px;
+    }
+
+    .baby-holder .col-right{
+        padding: 15px 80px 0 30px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+      
+    header{
+        height: initial;
+    }
+
+    .navbar{
+        margin: 0;
+        padding: 0 100px;
+        background-color: rgba(123, 197, 118, 0.9);
+    }
+    .navbar-brand span{
+        color: #fff;
+    }
+    .navbar-toggler-icon svg{
+        color: #fff;
+    }
+
+    .layer{
+        display: none;
+    }
+
+    .collapse{
+        padding-bottom: 10px;
+    }
+    .collapse a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .hero-Section {
+        padding-top: 140px;
+    }
+
+    .best-deals .card-container{
+        padding: 0;
+    }
+
+    .best-deals .img-container{
+        height: 220px;
+    }
+    .best-deals h4{
+        font-size: 20px;
+    }
+    .line-after{
+        font-size: 16px;
+    }
+    .newborn-care .cards2 h3{
+        font-size: 20px;
+    }
+
+    .newborn-care .baby-holder{
+        margin-top: 60px;
+    }
+    .newborn-care .col-right{
+        padding: 0 40px 0 40px;
+    }
+    .newborn-care .col-left{
+        height: 260px;
+    }
+
+    .babycare .cards-row2{
+        margin-top: 60px;
+    }
+    .babycare .card h4{
+        font-size: 16px;
+    }
+
+    .booking{
+        padding: 50px 0;
+        font-size: 30px;
+    }
+    .gblock{
+        padding: 50px 30px;
+    }
+
+    .gblock p{
+        font-size: 37px;
+    }
+    .gblock a{
+        font-size: 28px;
+        padding: 15px;
+        margin-top: 0;
+    }
+    footer .menu-row{
+        margin-bottom: 30px;
+    }
+
+    footer .footer-last{
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 767px){
+    header{
+        height: initial;
+    }
+
+    .navbar{
+        padding: 0 50px;
+        background-color: rgba(123, 197, 118, 0.9);
+    }
+    .navbar-brand span{
+        color: #fff;
+    }
+    .navbar-toggler-icon svg{
+        color: #fff;
+    }
+
+    .layer{
+        display: none;
+    }
+
+    .collapse{
+        padding-bottom: 10px;
+    }
+    .collapse a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .hero-Section{
+        padding: 150px 0 50px;
+    }
+
+    .best-deals{
+        padding-bottom: 0;
+    }
+
+    .best-deals .card-container{
+        margin-bottom: 100px;
+    }
+    .best-deals h4{
+        margin-top: 30px;
+    }
+    .best-deals .img-container img{
+        width: 60%;
+    }
+
+    .babycare{
+        margin: 40px;
+    }
+
+    .babycare .cards-row2{
+        margin-top: 80px;
+    }
+    .babycare .cards-row2 a{
+        margin: 30px auto;
+    }
+
+    .babycare .card-container2{
+        margin-bottom: 30px;
+    }
+
+    .booking{
+        padding: 60px 0 40px;
+        font-size: 25px;
+    }
+    .booking img{
+        display: none;
+    }
+
+    .reviews{
+        margin: 50px 0;
+    }
+    .slider{
+        margin: 60px 0;
+    }
+
+    .gblock{
+        padding: 30px;
+    }
+    .gblock p{
+        font-size: 40px;
+    }
+    .gblock a{
+        margin-top: 0;
+    }
+    footer .menu-row{
+        margin-bottom: 30px;
+    }
+    .footer-last{
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 575px){
+
+    header{
+        height: initial;
+    }
+
+    .navbar{
+        padding: 0 50px;
+        background-color: rgba(123, 197, 118, 0.9);
+    }
+    .navbar-brand span{
+        color: #fff;
+    }
+    .navbar-toggler-icon svg{
+        color: #fff;
+    }
+
+    .collapse {
+        margin-bottom: 10px;
+    }
+
+    .hero-Section{
+        padding: 80px 0 40px !important;
+    }
+    .hero-Section h1{
+        font-size: 40px;
+    }
+
+    .row{
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .line-after {
+        font-size: 16px;
+        padding: 0 5px;
+    }
+
+    .line-after::after {
+        width: 180px;
+        margin-top: 60px;
+    }
+
+    .navbar {
+        padding: 0 5px 0 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .layer {
+        display: none;
+    }
+
+    /* best deals section */
+
+    .best-deals{
+        padding-bottom: 0;
+    }
+
+    .best-deals .img-container img{
+        width: 50%;
+    }
+    .best-deals h4{
+        margin-top: 50px !important;
+    }
+
+    .best-deals .card-container {
+        margin-bottom: 120px;
+    }
+
+    .best-deals .card-container:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .best-deals .img-container {
+        height: 100px;
+        margin-bottom: 40px;
+    }
+
+    /* newborn care section */
+
+    .newborn-care .cards2 {
+        margin-bottom: 100px !important;
+    }
+
+    .newborn-care .col-left{
+        height: 220px ;
+        margin: 0 25px 0 0 !important;
+        border-radius: 0 30px 100px 0;
+        margin: 0 15px 0 0;
+        
+    }
+
+    .newborn-care .col-left .holder-img1{
+        width: 50%;
+        top: 40px;
+        left: -45px !important;
+    }
+
+    .baby-holder .col-left .holder-img2 {
+        left: 122px;
+        bottom: 2px;
+    }
+
+    .baby-holder .col-right {
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+
+
+    /* baby care section */
+
+    .babycare {
+        margin: 70px 0;
+    }
+
+    .babycare p.line-after{
+        margin-bottom: 0;
+    }
+    .babycare p.line-after::after{
+        top: 50px;
+    }
+
+    .babycare .cards-row2 {
+        padding: 0 15px;
+        margin: 40px 0 25px;
+    }
+
+    .babycare .card-container2 {
+        margin-bottom: 25px;
+    }
+
+    /* booking section */
+
+    .booking {
+        padding: 30px 10px;
+        font-size: 20px;
+        border-radius: 15px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .booking a {
+        font-size: 23px;
+    }
+
+    .booking p::before {
+        display: none;
+    }
+
+    .booking img {
+        display: none;
+    }
+
+    /* review section */
+
+    .reviews {
+        margin: 50px 0 0;
+    }
+
+    .slider{
+        margin: 70px 0 20px;
+    }
+
+    .slider-item {
+        width: 300px !important;
+        padding: 0;
+    }
+
+    .slider-item .card {
+        padding: 20px;
+    }
+
+    .slider-item h5 {
+        font-size: 20px;
+    }
+
+    .slider-item .review-date {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .slider-item .review-body {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .slider .flickity-button {
+        margin-top: 130px;
+    }
+
+    .gallery {
+        height: 400px;
+    }
+
+
+    /* signup section */
+
+    .signup {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .signup .gblock {
+        padding: 20px 10px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .gblock p {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .gblock a {
+        margin-top: 20px;
+        padding: 15px 25px;
+    }
+
+    /* footer section */
+
+    footer {
+        margin-top: 60px;
+    }
+
+    footer .menu-row {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .footer-col{
+        margin-bottom: 10px;
+    }
+    .footer-col::after {
+        content: "";
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 180px;
+        height: 2px;
+        border-radius: 10px;
+        background: transparent linear-gradient(90deg, #FFFFFF 0%, #747474 100%);
+    }
+    .footer-col:last-of-type{
+        margin-top: 40px;
+    }
+    .footer-col:last-of-type::after{
+        display: none;
+    }
+
+    .footer-col .stars2{
+        margin-bottom: 10px;
+    }
+
+    .footer-col h5 {
+        font-size: 20px;
+        margin-bottom: 15px;
+
+    }
+
+    .footer-col li {
+        margin-bottom: 10px;
+    }
+    .footer-col a{
+        font-size: 14px;
+    }
+
+}
+
+
